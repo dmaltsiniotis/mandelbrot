@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Mandelbrot_Detailed.fs" />
-    <Compile Include="Mandelbrot_Simple.fs" />
+    <Compile Include="mandelbrot.fs" />
   </ItemGroup>
 
   <ItemGroup>

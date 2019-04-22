@@ -2,7 +2,7 @@
 open System.Drawing
 open FSharp.Collections.ParallelSeq
 
-let max_iterations = 100 // This controls the level of detail
+let max_iterations = 100 // This effectively controls the level of detail
 let max_rgb = 255
 let mandelbrotTest c z = Complex.Pow(z, 2.0) + c // This is the actual Mandelbrot set "algorithm"
 
@@ -21,7 +21,7 @@ let colorMod iteration =
 let complex argv =
      let startTime = System.DateTime.Now
      let p0 = new Complex(0.0, 0.0)
-     let plotScalingFactor = 100.0 // This essentially controls how large/detailed the final bitmap will be. I can only get this up to about 5000 on a 64bit windows system.
+     let plotScalingFactor = 1000.0 // This essentially controls how large/detailed the final bitmap will be. I can only get this up to about 5000 on a 64bit windows system with 64gb of ram.
      let stepSize = 1.0 / plotScalingFactor
      let plotsize = 2.0 // This should always be 2.0 because when you plot the Mandelbrot set on a coordinate plane, it's range on the x-axis is -1 to 2.0.
 

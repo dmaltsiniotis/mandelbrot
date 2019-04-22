@@ -1,4 +1,4 @@
-# A Benoit B. Mandelbrot generator written in F\#
+# A Mandelbrot fractal generator written in F\#
 
 ## Tips
 
